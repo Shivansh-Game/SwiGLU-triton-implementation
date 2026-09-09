@@ -1,6 +1,8 @@
 # SwiGLU-triton-implementation
 A SwiGLU activation kernel written in Triton, benchmarked against PyTorch Eager implementations and torch.compile implementations
 
+Tested on an RTX 3060 12GB
+
 
 | Shape (B, S) | PyTorch Eager (ms) | `torch.compile` (ms) | Triton (ms) | Speedup vs Eager | Speedup vs Compiled |
 | :--- | :---: | :---: | :---: | :---: | :---: |
